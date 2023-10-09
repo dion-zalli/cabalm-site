@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cabal Official Site</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/skitter.styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo23.png">
+    <meta name="google-site-verification" content="PwEGmExHnOtjIl-YAMuEPfsq5EuBsXuAIrPRFM8SEWM"/>
+
+  <script src="js/jquery-1.6.3.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.animate-colors-min.js"></script>
+  <script src="js/jquery.skitter.min.js"></script>
+
+  <script src="js/highlight.js"></script>
+
+  <script>
+        $(document).ready(function() {
+            var options = {};
+            if (document.location.search){
+                  var array = document.location.search.split('=');
+                  var param = array[0].replace('?','');
+                  var value = array[1];
+
+                  if (param == 'animation') {
+                        options.animation = value;
+                  }
+                  else if (param == 'type_navigation') {
+                        if (value == 'dots_preview') {
+                              $('.border_box').css({'marginBottom': '40px'});
+                              options['dots'] = true;
+                              options['preview'] = true
+                        }
+                        else {
+                              options[value] = true;
+                              if (value == 'dots') $('.border_box').css({'marginBottom' : '40px'});
+                        }
+                  }
+            }
+            $('.box_skitter_large').skitter(options);
+
+            $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+        });
+  </script>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+          <img src="./images/br.png" alt="" width="400" height="70" />
+           CABAL MOBILE: HEROES OF NEVARETH OFFICIAL SITE
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+            <ul>
+          <input type="search" id="query" name="q" placeholder="Search...">
+          <button>Search</button>    
+          <li><a href="home.html" target="_self">Home</a></li>
+          <li><a href="aboutus.html" target="_self">About</a></li>
+          <li><a href="classes.html" target="_self">Classes</a></li>
+          <li><a href="recharge.html" target="_self">Recharge Forcegems</a></li>
+          <li><a href="contact.html" target="_self">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class = "container">
+        <div class="flashcon">
+            <div class="box_skitter box_skitter_large" style="z-index:0;">
+            <ul>
+				<li> <a href="#blindHeight"><img src="./images/f.jpg" class="random"/></a></li>
+				<li> <a href="#blindHeight"><img src="./images/t.jpg" class="random"/></a></li>
+				<li> <a href="#blindHeight"><img src="./images/h.jpg" class="random"/></a></li>
+			</ul>
+        </div>
+      </div>
+      <div class="midboxcon">
+            <div class="midbox1">
+				<img src = "images/mbimg1.jpg" alt ="" width = "333" height = "250" />
+			</div>
+			<div class="midbox2">
+				<img src = "images/mbimg2.jpg" alt ="" width = "333" height = "250" />
+			</div>
+            <div class="midbox3">
+				<img src = "images/mbimg3.jpg" alt ="" width = "333" height = "250" />
+			</div>
+	  </div>
+      <div class="contentoon">
+            <div class="content">
+                  <div class="sdebr">
+				  </div>
+			<div class="contentcon" id="heading"></div>
+		</div>
+		<div class="footer" id="heading"></div>
+            <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="home.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="aboutus.html">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="classes.html">Classes</a></li>
+      <li class="menu__item"><a class="menu__link" href="recharge.html">Recharge</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact.html">Contact Us</a></li>
+    </ul>
+    <p>&copy;2023 CABAL Online | [GM]Dion </p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
+</footer>
+			</div>
+      </div>
+
+</body>
+</html>

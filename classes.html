@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cabal Official Site</title>
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" type="text/css" href="css/skitter.styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo23.png">
+
+  <script src="js/jquery-1.6.3.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.animate-colors-min.js"></script>
+  <script src="js/jquery.skitter.min.js"></script>
+
+  <script src="js/highlight.js"></script>
+
+  <script>
+        $(document).ready(function() {
+            var options = {};
+            if (document.location.search){
+                  var array = document.location.search.split('=');
+                  var param = array[0].replace('?','');
+                  var value = array[1];
+
+                  if (param == 'animation') {
+                        options.animation = value;
+                  }
+                  else if (param == 'type_navigation') {
+                        if (value == 'dots_preview') {
+                              $('.border_box').css({'marginBottom': '40px'});
+                              options['dots'] = true;
+                              options['preview'] = true
+                        }
+                        else {
+                              options[value] = true;
+                              if (value == 'dots') $('.border_box').css({'marginBottom' : '40px'});
+                        }
+                  }
+            }
+            $('.box_skitter_large').skitter(options);
+
+            $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+        });
+  </script>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+          <img src="./images/br.png" alt="" width="400" height="70" />
+           CABAL MOBILE: HEROES OF NEVARETH OFFICIAL SITE
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+            <ul>
+          <input type="search" id="query" name="q" placeholder="Search...">
+          <button>Search</button>    
+          <li><a href="home.html" target="_self">Home</a></li>
+          <li><a href="aboutus.html" target="_self">About</a></li>
+          <li><a href="classes.html" target="_self">Classes</a></li>
+          <li><a href="recharge.html" target="_self">Recharge Forcegems</a></li>
+          <li><a href="contact.html" target="_self">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="contentoon">
+                <div class="classes">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>Class</td>
+                            <td>Description</td>
+                        </tr>
+                        <tr>
+                            <td><img src = "images/btnchar_wa.webp" alt ="" width = "55" height = "70" /></td>
+                            <td>Warrior</td>
+                            <td>The Warrior class is the typical melee sword-user. They use Force to brutally enhance their physical abilities. They possess the highest innate vitality or health value and their offensive skills are slow and powerful. Their equipment set is by default the highly-defensive Armour Set, metallic armours made of various materials and two-handed swords, either Great Swords or Daikatana. They possess many strengthening buff skills that can even further enhance their capabilities, including party-targeted buffs. Their primary attribute is Strength which enhances their physical attack value and their resistance.</td>
+                        </tr>
+                        <tr>
+                            <td><img src = "images/btnchar_bl.webp" alt ="" width = "55" height = "70" /></td>
+                            <td>Blader</td>
+                            <td>The Blader class is a fast sword-user melee class known for its enhanced dodging and accuracy, as well as the speed of its skills. They use Force to enhance both their dexterity and strength, giving them more flexibility than a Warrior. Unlike warriors, however, they possess only two party-enhancing strengthening skills; as such relying more often on their individual strengths even when in a party, namely their damage output and critical hit rate. Their equipment includes by default the Martial Set, a lightweight kimono-styled cloth which favours Defense Rate, or evasion, as well as a Blade and a Katana, or two swords of only one type if the player is so inclined.</td>
+                        </tr>
+                        <tr>
+                            <td><img src = "images/btnchar_wz.webp" alt ="" width = "55" height = "70" /></td>
+                            <td>Wizard</td>
+                            <td>The basic magic-user. They use Force to amplify the power of the elements around them akin to what a Warrior does to its own strength. Their primary attribute is Intelligence which raises their magical attack power. They possess several buff skills that can affect not only themselves but any other friendly targets they choose, as well as many party buffs. Some of these skills are well known, namely the most basic ones which increase Health or Defense and are usually performed on newcomers to aid them in their initial progress. Their skills have a powerful damage output; however, they have one particular difference from melee classes, which is their area of effect, or AoE. While melee classes deal high damage to lesser enemies with the same skill, Wizards disperse their damage through the highest area possible for all classes. Combined with the paralysing capability of all of their strongest skills, Wizards are crucial for controlling masses of enemies. Their main disadvantage is their lower Defense; still, this can be tactically overcome by making use of the stun effect of their advanced magic. Their equipment set is by default the Martial Set and dual Orbs, single-handed globe-shaped controllers which spawn staves in recent versions of the game.</td>
+                        </tr>
+                        <tr>
+                            <td><img src = "images/btnchar_fb.webp" alt ="" width = "55" height = "70" /></td>
+                            <td>Force Blader</td>
+                            <td>The Force Blader class is themed as a magic swordsman. They use Force to empower their blade arts and have developed unique debuff skills that no other class possesses. Although they can use targeted cannon-type magic skills to fight, their sword skills are the strongest, their magic affinity being demonstrated only in their Force-imbued Sword skills. Their most powerful attacks are also enchanted with curses, causing negative handicapping effects on their targets alongside damage itself. Because they evenly nurture all three of the main attributes, they are both the most flexible and most time-consuming class to develop. Their equipment is by default the balanced Battle Set, a protective suit made of many different kinds of fibers, a Katana and an Orb. Their complexity in the use of curse skills makes them a class best for advanced players.</td>
+                        </tr>
+                        <tr>
+                            <td><img src = "images/btnchar_fs.webp" alt ="" width = "55" height = "70" /></td>
+                            <td>Force Shielder</td>
+                            <td>Force Shielders are one of the two classes who have learned to materialize Force into a real weapon. By studying magic, they have gained the ability to visualize and create an Astral Shield, a relic which provides them with greater Defense. This class is the basic tank class which possesses the highest Defense of all classes and, when combined with its powerful damage-absorbing party skill, can effectively guard other party members from a high amount of damage. Force Shielders also possess a basic Healing skill, unlike all other classes say for the Force Archer. Their latter skills are also the most critical damaging techniques of all classes, making them both a good defender and attacker. Like the Force Blader, they are a hybrid Sword-Magic class. However, unlike the Force Blader who ultimately will have to develop both spheres to be able to use curses, the Force Shielder can truly specialize in only one area of expertise. A Sword Force Shielder will focus on the physical Sword skills and value brawling and critical damaging. In this case, they would value Strength and Dexterity for physical power and resistance. A Magic Force Shielder will focus on Magic skills, namely cannon-type targeted spells which value damage per second instead of high instant damage. They will rely on Dexterity and Intelligence for strength, resistance and dodge. The class can also be hybridized to fully utilise its complete potential, commonly making use of paralysing Magic skills when fighting against the environment. Their arsenal is by default the Armour Set, a Blade and a Crystal, counterpart to the Orb, though it can depend on the type of specialization taken if the player so chooses.</td>
+                        </tr>
+                        <tr>
+                            <td><img src = "images/btnchar_fa.webp" alt ="" width = "55" height = "70" /></td>
+                            <td>Force Archer</td>
+                            <td>Force Archers are a variation of Wizards who prefer to manipulate rather than amplify Force. Because of this, their skills have a lesser area of effect in comparison to the Wizard's skills but, in contrast, their damage is more precise, more accurate and with a higher critical hit rate. They visualize and create a weapon in a way similar to the Force Shielder, which is the Astral Bow; this weapon enhances their accuracy and critical rate. They also possess the highest attack range of all classes, even higher than that of a Wizard. Unique to this class, they possess supportive magic such as powerful single-target and party Healing skills, as well as many useful buffs, especially some used on new players alongside the Wizard's. Their skills have the fastest casting time of all, giving them a high damage per second value. Force Archers value Intelligence and Dexterity, both for magical power and dodging, as well as the balanced Battle Set and dual Crystals.</td>
+                        </tr>
+                         <tr>
+                            <td><img src = "images/btnchar_gl.webp" alt ="" width = "55" height = "70" /></td>
+                            <td>Gladiator</td>
+                            <td>The Gladiator is a powerful melee class that relies on the Rage resource to deal close and long range damage. Rage is accumulated through the continued use of skills, sending the Gladiator into a frenzy. The Gladiator excels at dealing Area of Effect damage and utilizes the unique Chakram weapon, wears heavy armor, and benefits greatly from the Strength Stat.</td>
+                        </tr>
+                         <tr>
+                            <td><img src = "images/btnchar_fg.webp" alt ="" width = "55" height = "70" /></td>
+                            <td>Force Gunner</td>
+                            <td>A special force driven battle style created in secrecy, the Force Gunner specializes in long ranged sniping skills and powerful Area of Effect damage. Focusing on higher attack speeds and critical attacks, Force Gunners weave physical and magical attacks to destroy their enemies from afar. Force Gunners wear medium armor and benefit from Intelligence and Dexterity Stats.</td>
+                        </tr>
+                    </table>
+                </div>			
+		</div>
+		<div class="footer" id="heading"></div>
+            <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="home.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="aboutus.html">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="classes.html">Classes</a></li>
+      <li class="menu__item"><a class="menu__link" href="recharge.html">Recharge</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact.html">Contact Us</a></li>
+    </ul>
+    <p>&copy;2023 CABAL Online | [GM]Dion </p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
+</footer>
+			</div>
+      </div>
+
+</body>
+</html>
